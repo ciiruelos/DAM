@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tablas prueba 1 y 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        caption {
+            font-style: italic;
+            font-family: "Times New Roman", serif;
+            font-size: 1.1em;
+            margin-bottom: 8px;
+        }
+
+        .tabla1 {
+            border: 2px solid blue;
+            border-collapse: separate;
+            border-spacing: 10px 5px;
+        }
+
+        .tabla1 th, .tabla1 td {
+            border: 2px solid blue;
+            padding: 10px 15px;
+            text-align: center;
+        }
+
+        .tabla2 {
+            border: 2px solid orange;
+            border-collapse: collapse;
+        }
+
+        .tabla2 th, .tabla2 td {
+            border: 2px solid orange;
+            padding: 10px 15px;
+            text-align: center;
+        }
+
+        .tabla2 th {
+            background-color: lightgray;
+            font-weight: bold;
+        }
+
+        .verde {
+            background-color: yellowgreen;
+            color: white;
+        }
+
+        .gris {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+
+    <table class="tabla1">
+        <caption><em>Tabla prueba 1</em></caption>
+        <tr>
+            <th>columna 1</th>
+            <th>columna 2</th>
+            <th>columna 3</th>
+            <th>columna 4</th>
+        </tr>
+        <tr>
+            <td>col1</td>
+            <td>col2</td>
+            <td></td>
+            <td rowspan="2">col3</td>
+        </tr>
+        <tr>
+            <td>colum1</td>
+            <td>colum2</td>
+            <td>colum4</td>
+        </tr>
+    </table>
+
+    <table class="tabla2">
+        <caption><em>Tabla prueba 2</em></caption>
+        <tr>
+            <th>columna 1</th>
+            <th>columna 2</th>
+            <th>columna 3</th>
+            <th>columna 4</th>
+        </tr>
+        <tr>
+            <td class="verde">col1</td>
+            <td class="verde" colspan="2">col2</td>
+            <td class="verde">col3</td>
+        </tr>
+        <tr>
+            <td class="gris">colum1</td>
+            <td class="gris" rowspan="2">colum2</td>
+            <td class="gris">colum3</td>
+            <td class="gris">colum4</td>
+        </tr>
+        <tr>
+            <td class="verde">column1</td>
+            <td class="verde">column3</td>
+            <td class="verde">column4</td>
+        </tr>
+        <tr>
+            <td class="gris">colu1</td>
+            <td class="gris">colu2</td>
+            <td class="gris">colu3</td>
+            <td class="gris">colu4</td>
+        </tr>
+    </table>
